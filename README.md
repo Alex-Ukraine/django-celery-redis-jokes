@@ -1,4 +1,16 @@
-First Install and Test Redis:
+1. create dir and clone git repo
+
+
+2. Issues with virtualenv:
+> pip install virtualenv
+> 
+> virtualenv venv
+> 
+> source venv/bin/activate
+> 
+> pip install -r requirements.txt
+
+3. First Install and Test Redis:
 > sudo apt-get update
 > 
 > sudo apt-get upgrade
@@ -9,7 +21,7 @@ First Install and Test Redis:
 > 
 >redis-cli
 
-Then srt runserver, celery beat and celery worker:
+4. Then srt runserver, celery beat and celery worker:
 > python manage.py runserver
 > 
 > celery -A jokes_project beat -l INFO
