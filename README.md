@@ -17,12 +17,12 @@
 > 
 > sudo apt-get install redis-server
 > 
->sudo service redis-server restart
+> sudo service redis-server restart
 > 
->redis-cli
+> redis-cli
 
 4. Then srt runserver, celery beat and celery worker:
-> python manage.py runserver
+> python3 manage.py runserver
 > 
 > celery -A jokes_project beat -l INFO
 > 
